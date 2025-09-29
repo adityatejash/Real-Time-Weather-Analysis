@@ -8,7 +8,7 @@ from sklearn.metrics import mean_squared_error  # To measure prediction accuracy
 from datetime import datetime, timedelta  # To handle date and time
 import pytz  # Timezone handling
 
-API_KEY = 'd80a4f1b6e8f4f83603e0a5e604bbfff'
+API_KEY = '' # Generate the API key from openweather map then paste it here
 BASE_URL = 'https://api.openweathermap.org/data/2.5/'
 
 def get_current_weather(city):
