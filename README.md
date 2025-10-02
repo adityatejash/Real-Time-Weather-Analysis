@@ -1,3 +1,5 @@
+NOTE: In line 83, copy the path of 'weather.csv' file and replace it with the copied path. Also add '\' after every '\'.
+
 Step 1: Download the repository as a ZIP file and extract it to your desired location.
 
 Step 2: Install Python (if not already installed) and ensure pip is available.
