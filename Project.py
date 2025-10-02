@@ -8,7 +8,7 @@ from sklearn.metrics import mean_squared_error  # To measure prediction accuracy
 from datetime import datetime, timedelta  # To handle date and time
 import pytz  # Timezone handling
 
-API_KEY = '' # Generate the API key from openweather map then paste it here
+API_KEY = 'd80a4f1b6e8f4f83603e0a5e604bbfff'
 BASE_URL = 'https://api.openweathermap.org/data/2.5/'
 
 def get_current_weather(city):
@@ -80,7 +80,7 @@ def predict_future(model, current_value):
 def weather_view():
     city = input("Enter City Name: ")
     current_weather = get_current_weather(city)
-    historical_data = read_historical_data('weather.csv')
+    historical_data = read_historical_data('D:\\RealTimeWeatherAnalysis\\weather.csv') # Copy the path of weather.csv and replace it here, also add '\' after every '\'.
     X, y, le = prepare_data(historical_data)
     rain_model = train_model_function(X, y)
 
