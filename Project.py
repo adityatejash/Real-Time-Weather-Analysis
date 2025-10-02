@@ -80,7 +80,7 @@ def predict_future(model, current_value):
 def weather_view():
     city = input("Enter City Name: ")
     current_weather = get_current_weather(city)
-    historical_data = read_historical_data('D:\\RealTimeWeatherAnalysis\\weather.csv')
+    historical_data = read_historical_data('weather.csv')
     X, y, le = prepare_data(historical_data)
     rain_model = train_model_function(X, y)
 
